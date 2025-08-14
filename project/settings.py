@@ -56,10 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-<<<<<<< HEAD
     'whitenoise.middleware.WhiteNoiseMiddleware'
-=======
->>>>>>> f8dcbca673eb9f35137c00ab5f9569ac4f53d56c
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -117,18 +114,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-<<<<<<< HEAD
 USE_I18N = True
 TIME_ZONE = 'America/New_York'
 USE_TZ = True
 
-=======
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_TZ = True
->>>>>>> f8dcbca673eb9f35137c00ab5f9569ac4f53d56c
 
 
 # Static files (CSS, JavaScript, Images)
@@ -147,7 +136,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-<<<<<<< HEAD
 if 'RENDER' in os.environ:
     DEBUG = False
     ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME')]
@@ -160,5 +148,3 @@ if 'RENDER' in os.environ:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
-=======
->>>>>>> f8dcbca673eb9f35137c00ab5f9569ac4f53d56c
