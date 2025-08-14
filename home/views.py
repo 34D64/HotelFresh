@@ -1,4 +1,3 @@
-
 # views.py
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
@@ -70,21 +69,3 @@ def index(request):
 def booking_detail(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id)
     return render(request, 'home/booking_detail.html', {'booking': booking})
-from django.shortcuts import render, redirect
-from .models import Room
-from .forms import BookingForm
-
-def index(request):
-    rooms = Room.objects.all()
-    if request.method == 'POST':
-        form = BookingForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('home')
-    else:
-        form = BookingForm()
-
-    return render(request, 'home/index.html', {
-        'rooms': rooms,
-        'form': form
-    })

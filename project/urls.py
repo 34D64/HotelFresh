@@ -7,7 +7,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
 ]
-<<<<<<< HEAD
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 else:
@@ -19,8 +18,3 @@ else:
             'document_root': settings.MEDIA_ROOT,
         }),
     ]
-=======
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
->>>>>>> f8dcbca673eb9f35137c00ab5f9569ac4f53d56c

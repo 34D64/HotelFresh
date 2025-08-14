@@ -1,6 +1,5 @@
 {% load static %}
 {% load humanize %}
-<<<<<<< HEAD
 {% load widget_tweaks %}
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
@@ -150,46 +149,5 @@
 </form>
 
   </section>
-=======
-
-<!-- هتل پرشین‌فی - صفحه اصلی -->
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>هتل پرشین‌فی</title>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'home/style.css' %}">
-</head>
-<body>
-    <header>
-        <h1>هتل پرشین‌فی</h1>
-        <p>رزرو اتاق‌های لوکس با بهترین قیمت</p>
-    </header>
-
-    <section class="hero">
-        <h2>اتاق‌های ما</h2>
-    </section>
-
-    <section class="rooms">
-        {% for room in rooms %}
-        <div class="room-card">
-            <img src="{{ room.image.url }}" alt="{{ room.name }}">
-            <h3>{{ room.name }}</h3>
-            <p>{{ room.beds }} تخت خواب | {{ room.price|intcomma }} تومان</p>
-        </div>
-        {% endfor %}
-    </section>
-
-    <section class="booking-form">
-        <h2>فرم رزرو</h2>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">رزرو کن</button>
-        </form>
-    </section>
->>>>>>> f8dcbca673eb9f35137c00ab5f9569ac4f53d56c
 </body>
 </html>

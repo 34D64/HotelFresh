@@ -26,8 +26,7 @@ SECRET_KEY = 'django-insecure-i+sha9a010h6_9c*yy*d=j(!1p0*os#13qj*0-j#w1^6ns(%ji
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = ['*']  # Replace with your VPS IP or domain
-DEBUG = False
-ALLOWED_HOSTS = ['your.vps.ip.address', 'yourdomain.com']  # Replace with your VPS IP or domain
+
 
 
 # Application definition
